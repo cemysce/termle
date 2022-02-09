@@ -9,4 +9,4 @@ but any ingenuity in recreating that visual design using only text belongs to me
 _(okay, also the Unicode Consortium and the long history of box-drawing characters, without which this program would look nowhere near as good)_.
 
 The logic for computing the daily game number (and the daily solution) was reproduced by inspecting upstream Wordle's JavaScript code.
-Everything else was written from scratch by me to replicate the gameplay logic as I understood it from playing the game.
+Everything else was written by myself from scratch, to replicate the gameplay logic as I understood it from playing the game.
