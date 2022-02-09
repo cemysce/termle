@@ -1,6 +1,6 @@
 # termle
 
-A blatant but loving attempt to faithfully recreate [Wordle](https://www.powerlanguage.co.uk/wordle/)'s gameplay **and** aesthetic... from a terminal.
+A ~~blatant ripoff~~ loving attempt to faithfully recreate [Wordle](https://www.powerlanguage.co.uk/wordle/)'s gameplay **and** aesthetic... from a terminal.
 
 Credit for the game's name, gameplay logic, and visual design belongs to [Josh Wardle](https://www.powerlanguage.co.uk/).
 
