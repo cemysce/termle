@@ -16,6 +16,16 @@ Also the following are recommended:
 * `xsel` command for Share support
 * [Python Requests module](https://docs.python-requests.org/en/latest/) needed to download word lists, which is required if you don't already them saved to disk
 
+## Usage
+
+Clone the repo and make sure you meet the requirements.  Discover the run options available.
+
+```bash
+git clone https://github.com/cemysce/termle.git
+cd termle/termle
+./termle.py --help
+```
+
 ---
 
 Credit for the gameplay logic and visual design belongs to [Josh Wardle](https://www.powerlanguage.co.uk/),
