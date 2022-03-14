@@ -17,6 +17,17 @@ class Arguments:
     PLAY_DAILY_TODAY = True
 
     class __HelpFormatter(argparse.RawDescriptionHelpFormatter):
+        def __init__(self, *args, **kwargs):
+            # argparse requires each argument's description to start at column
+            #  24 at the latest, so if argument and argument value text are too
+            #  long, description will begin on following line; it is defaulted
+            #  in parameters to RawDescriptionHelpFormatter's base class
+            #  constructor and RawDescriptionHelpFormatter doesn't itself
+            #  override it, so to do so we implement this constructor here
+            #  (which wouldn't be necessary otherwise) and pass all parameters
+            #  including the overriden parameter to the base class constructor
+            kwargs['max_help_position'] = 40
+            super().__init__(*args, **kwargs)
         def add_usage(self, usage, actions, groups, prefix=None):
             if prefix is None:
                 prefix = 'Usage: '
