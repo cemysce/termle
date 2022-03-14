@@ -26,6 +26,31 @@ cd termle/termle
 ./termle.py --help
 ```
 
+## Status
+
+Supports all core features of upstream game:
+
+* same word lists
+* same daily word
+* same gameplay rules
+* same colors
+* same configuration options
+* same statistics tracked
+* timer until next day
+* sharing results using clipboard
+
+Also supports:
+
+* downloading word lists from upstream
+* random play (won't track statistics)
+
+Missing support for:
+
+* Help panel/popup
+* detecting and handling insufficient terminal support for 256 colors, mouse, etc.
+
+There are numerous minor issues, and superficial differences from upstream game that are known and are being tracked.
+
 ---
 
 Credit for the gameplay logic and visual design belongs to [Josh Wardle](https://www.powerlanguage.co.uk/),
