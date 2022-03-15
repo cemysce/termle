@@ -704,11 +704,13 @@ class MainPanel(ModalPanel):
                 else:
                     toast = Toast(self._stdscr, self._colors)
                     toast.run(answer.upper())
-                self.__play_stats_panel()
+                if self.__game_core.play_stats is not None:
+                    self.__play_stats_panel()
             elif guess_result == GuessResult.RIGHT:
                 toast = Toast(self._stdscr, self._colors)
                 toast.run(self.__CONGRATULATORY_TOASTS[len(self.__game_core.guesses)-1])
-                self.__play_stats_panel()
+                if self.__game_core.play_stats is not None:
+                    self.__play_stats_panel()
 
         # end state event loop (game is over, but player can still interact)
         while True:
